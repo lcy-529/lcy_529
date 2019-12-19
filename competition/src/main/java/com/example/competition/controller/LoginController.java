@@ -1,6 +1,6 @@
 package com.example.competition.controller;
 
-import com.example.competition.bean.UserBean;
+import com.example.competition.bean.user;
 import com.example.competition.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,13 +26,18 @@ public class LoginController {
         return "login";
     }
 
+    @RequestMapping("/register")
+    public String show_register(){
+        return "register";
+    }
+
     @RequestMapping(value = "/loginIn",method = RequestMethod.POST)
-    public String login(String name,String password){
-        UserBean userBean = userService.loginIn(name,password);
-        if(userBean!=null){
-            return "success";
+    public String login(Integer teacId, String password){
+        user user = userService.loginIn(teacId,password);
+        if(user!=null){
+            return "index-teacher";
         }else {
-            return "error";
+            return "login";
         }
     }
 }

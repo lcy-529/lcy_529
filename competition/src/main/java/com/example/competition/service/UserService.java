@@ -1,7 +1,7 @@
 package com.example.competition.service;
 
-import com.example.competition.bean.UserBean;
+import com.example.competition.bean.user;
 
 public interface UserService {
-    UserBean loginIn(String name, String password);
+    user loginIn(Integer teacId, String password);
 }

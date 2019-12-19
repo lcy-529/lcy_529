@@ -1,6 +1,5 @@
 package com.example.competition;
 
-import com.example.competition.bean.UserBean;
 import com.example.competition.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -18,10 +17,9 @@ class CompetitionApplicationTests {
 
     @Test
     public void contextLoads() {
-        UserBean userBean = userService.loginIn("a","a");
-        System.out.println("该用户ID为：");
-        System.out.println(userBean.getId());
+//        user user = userService.loginIn(1,"a");
+//        System.out.println("该用户ID为：");
+//        System.out.println(userBean.getId());
     }
-
 
 }

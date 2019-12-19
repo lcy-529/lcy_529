@@ -1,7 +1,7 @@
 spring:
   datasource:
-    name: db_01  #数据库名
-    url: jdbc:mysql://localhost:3306/db_01 #url
+    name: db_competition  #数据库名
+    url: jdbc:mysql://localhost:3306/db_competition?characterEncoding=utf8 #url
     username: root  #用户名
     password: 1045152332zjy  #密码
     driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动

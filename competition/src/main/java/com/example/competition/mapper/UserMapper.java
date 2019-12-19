@@ -1,8 +1,9 @@
 package com.example.competition.mapper;
 
-import com.example.competition.bean.UserBean;
+import com.example.competition.bean.user;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-    UserBean getInfo(@Param("name")String name, @Param("password")String password);
+    user getInfo(@Param("teacId")Integer teacId, @Param("password")String password);
+
 }

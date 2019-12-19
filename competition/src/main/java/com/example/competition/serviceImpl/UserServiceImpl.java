@@ -1,6 +1,6 @@
 package com.example.competition.serviceImpl;
 
-import com.example.competition.bean.UserBean;
+import com.example.competition.bean.user;
 import com.example.competition.mapper.UserMapper;
 import com.example.competition.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public UserBean loginIn(String name, String password) {
-        return userMapper.getInfo(name,password);
+    public user loginIn(Integer teacId, String password) {
+        return userMapper.getInfo(teacId,password);
     }
 
 }
